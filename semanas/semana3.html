@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formação Cloud Computing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="semanas.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col-md-3 sidebar">
+          <h5><strong>Conteúdo</strong></h5>
+          <ul class="list-unstyled">
+            <li>Introdução ao Cloud Computing</li>
+            <li>Modelos e Tipos de Nuvem</li>
+            <li>Benefícios da Computação em Nuvem</li>
+            <li>CAPEX vs OPEX</li>
+            <li>CLI (Azure Command-Line Interface)</li>
+            <li>Estrutura do Azure</li>
+            <li>Alta Disponibilidade</li>
+          </ul>
+        </div>
+
+        <div class="col-md-9 main-content">
+          <h1 class="mb-4">🌩️ Conhecendo Azure Storage e Segurança</h1>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+          
+          <h2 class="section-title">1. Armazenamento</h2>
+          <p>
+            Conjunto de serviços na nuvem para <strong>guardar, gerenciar e acessar dados</strong> de forma escalável, segura e altamente disponível.
+          </p>
+          <p>
+            Com modelos como <strong>Azure Blob Storage</strong>, <strong>Azure Discos</strong> 
+          </p>
+          <p>
+            AQUI VAI SER OUTRO TEXTO: Nesta primeira formação, você vai entender os fundamentos da nuvem e aprender
+            como a estrutura da Microsoft Azure se organiza para garantir alta
+            disponibilidade e desempenho. Bora mergulhar nesse universo? 🚀
+          </p>
+
+          <h2 class="section-title">1. Azure Blob Storage</h2>
+          <h4 class="section-title">O que é: </h4>
+          <p>
+            Armazenamento de objetos para arquivos não estruturados como imagens, vídeos, documentos e backups.
+          </p>
+
+          <h4 class="section-title">Benefícios</h4>
+          <ul>
+            <li>Armazena qualquer tipo de arquivo (JPG, MP4, DOC...)</li> 
+            <li>Streaming direto de mídia</li>
+            <li>Escalável, seguro, com três camadas (Hot, Cool, Archive)</li>
+          </ul>
+
+          <h4 class="section-title">Tipos de uso</h4>
+          <ul>
+            <li>Exibição de mídias em apps</li>
+            <li>Armazenamento de logs, documentos e backups</li>
+          </ul>
+
+          <p>
+            <em>Palavras-chave: Blob, contêiner, backup, Hot/Cool/Archive</em>
+          </p>
+
+          <h4 class="section-title">Benefícios</h4>
+          <ul>
+            <li>
+              <strong>Flexibilidade e escalabilidade</strong> - Permite que
+              empresas se adaptem rapidamente, fornecendo infraestrutura e
+              serviços sob demanda sem necessidade de investimentos pesados.
+            </li>
+            <li>
+              <strong>Custo sob demanda (pay-as-you-go)</strong> - Modelo
+              escalável onde se paga apenas pelo que é usado, reduzindo gastos
+              com infraestrutura e manutenção.
+            </li>
+            <li>
+              <strong>Segurança e backup automatizado</strong> - Oferece backups
+              automáticos e proteção contra falhas, ataques cibernéticos e
+              desastres, garantindo integridade dos dados.
+            </li>
+            <li>
+              <strong>Prototipagem rápida</strong> - Facilita inovação e testes
+              ágeis, permitindo criação e implantação de aplicativos sem
+              infraestrutura complexa.
+            </li>
+            <li>
+              <strong>Colaboração em tempo real</strong> - Acesso remoto a
+              arquivos e controle de permissões otimizam o trabalho em equipe e
+              a produtividade.
+            </li>
+          </ul>
+
+          <h2 class="section-title">4. CAPEX vs OPEX</h2>
+          <p>
+            <strong>CAPEX (Despesas de Capital)</strong>: Investimento em
+            infraestrutura física (servidores, data centers).<br />
+            <strong>Exemplo:</strong> Comprar servidores próprios para um data
+            center. <br /><br />
+            <strong>OPEX (Despesas Operacionais)</strong>: Gastos operacionais,
+            como uso mensal do Azure.<br />
+            <strong>Exemplo:</strong> Pagar pelo uso do Azure mensalmente
+            (modelo "pay-as-you-go").
+          </p>
+
+          <h2 class="section-title">5. CLI – Azure Command Line Interface</h2>
+          <p>
+            Ferramenta de linha de comando da Azure para automatizar tarefas na
+            plataforma. Ideal para desenvolvedores e administradores.
+          </p>
+
+          <!-- Separador -->
+          <div class="my-5">
+            <hr class="custom-divider" />
+          </div>
+
+          <h1 class="mb-4">📝 1. Tipos de Serviço de Nuvem</h1>
+
+          <h2 class="section-title"> O que é Grupo de Recursos</h2>
+          <p>
+            Um <strong>grupo de recursos</strong> no Azure é uma coleção de
+            recursos relacionados (como máquinas virtuais, bancos de dados,
+            redes) que são gerenciados como uma única entidade.
+          </p>
+
+          <h4 class="section-title">Benefício:</h4>
+          <ul>
+            <li>
+              <strong>Gerenciamento centralizado:</strong> Permite a gestão,
+              monitoramento e acesso aos recursos de forma mais organizada e
+              simplificada.
+            </li>
+            <li>
+              <strong>Facilidade de implementação:</strong> Agrupamento de
+              recursos facilita a criação, controle de permissões e organização
+              de ambientes.
+            </li>
+          </ul>
+
+          <h4 class="section-title">Tipo de Uso:</h4>
+          <p>
+            Usado para organizar recursos com base em seu ciclo de vida, como
+            grupos de recursos por projeto, aplicação ou ambiente (produção,
+            desenvolvimento).
+          </p>
+
+          <h4 class="section-title">Palavras-chave:</h4>
+          <p>
+            Organização, gerenciamento, ciclo de vida, controle de permissões, Azure, recursos agrupados.
+          </p>
+
+           <!-- Mini Separador -->
+           <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+          <h1 class="mb-4">📝 2. Estrutura, Regiões e AZ (Zonas de Disponibilidade)</h1>
+
+          <h2 class="section-title">O que é:</h2>
+          <ul>
+            <li>
+              A <strong>estrutura</strong> do Azure é composta por <strong>geográficas e Zonas de Disponibilidade (AZ).</strong>
+            </li>
+            <li>
+              Uma <strong>região</strong> é um local geográfico onde os centros de dados do Azure estão localizados.
+            </li>
+            <li>
+              Uma <strong>Zona de Disponibilidade (AZ)</strong> é uma unidade de falha independente dentro de uma região. Uma região pode ter várias AZs para garantir alta disponibilidade
+            </li>
+          </ul>
+
+          <h4 class="section-title">Benefício:</h4>
+          <ul>
+            <li>
+              <strong>Alta disponibilidade:</strong> As Zonas de Disponibilidade oferecem redundância para serviços, garantindo maior resiliência e continuidade do serviço.
+            </li>
+            <li>
+              <strong>Desempenho otimizado:</strong> Escolher a região mais próxima do usuário pode melhorar a latência.
+            </li>
+            <li>
+              <strong>Escalabilidade:</strong> Recursos podem ser distribuídos entre regiões e AZs para suportar alta demanda.
+            </li>
+          </ul>
+
+          <h4 class="section-title">Tipo de Uso:</h4>
+          <ul>
+            <li>
+              Usado para alocar recursos de computação, armazenamento, e redes de forma eficiente e resiliente.
+            </li>
+            <li>
+              Importante para arquiteturas de alta disponibilidade e recuperação de desastres.
+            </li>
+          </ul>
+
+          <h4 class="section-title">Palavras-chave:</h4>
+          <p>
+            Regiões, Zonas de Disponibilidade, alta disponibilidade, redundância, escalabilidade, falha independente, latência, Azure.
+          </p>
+
+
+          <ul>
+            <li>
+              <strong>Regiões</strong>: Localizações geográficas com data
+              centers Azure
+            </li>
+            <li>
+              <strong>Zonas de Disponibilidade</strong>: Unidades independentes
+              para garantir alta disponibilidade
+            </li>
+          </ul>
+          <img
+            src="../imagens/image.png"
+            alt="Diagrama da estrutura da Azure com regiões e zonas de disponibilidade"
+            class="custom-img my-3"
+          />
+          <p>
+            <em>Curiosidade: uma região Azure possui no mínimo 3 zonas!</em>
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-left mt-5">
+        <a href="../index.html" class="btn btn-outline-primary btn-lg shadow-lg rounded-pill px-4 py-2">
+          <i class="bi bi-house-door-fill"></i> Voltar para a página inicial
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

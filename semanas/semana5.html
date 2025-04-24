@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semana 5 - Banco de Dados & Monitoramento</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="semanas.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col-md-3 sidebar">
+          <h5><strong>Conteúdo</strong></h5>
+          <ul class="list-unstyled">
+            <li><a href="#bcd" class="text-decoration-none glow-hover">BANCO DE DADOS</a></li>
+            <li><a href="#cosmosDB" class="text-decoration-none glow-hover">Azure Cosmos DB</a></li>
+            <li><a href="#postgreSQL" class="text-decoration-none glow-hover">Azure Database for PostgreSQL</a></li>
+            <li><a href="#mySQL" class="text-decoration-none glow-hover">Azure SQL</a></li>
+            <li><a href="#azureMySQL" class="text-decoration-none glow-hover">Azure Database for MySQL</a></li>
+            <li><a href="#diferenca" class="text-decoration-none glow-hover">Azure SQL vs. Azure Database for MySQL</a></li>
+            <li><a href="#resumo" class="text-decoration-none glow-hover">Resumo Final – Migração de Banco de Dados para a Nuvem (Azure)</a></li>
+            <li><a href="#monitoramento" class="text-decoration-none glow-hover">monitoramento</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-9 main-content">
+          <!-- Banco de Dados & Monitoramento -->
+          <div id="bcd" class="">
+            <h1 class="mb-4">Banco de Dados & Monitoramento</h1>
+            <link
+              href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+            />
+
+            <h2 class="section-title">1. BANCO DE DADOS</h2>
+            <p>
+              Banco de dados é uma estrutura usada para armazenar, organizar e
+              acessar grandes volumes de informações de forma eficiente.
+            </p>
+            <p>
+              <strong>Tipo de uso: </strong>Essencial em aplicações como sites
+              de vendas, sistemas de cadastro e qualquer sistema que armazene
+              dados como nome, endereço, pagamento, etc.
+            </p>
+            <p>
+              <strong>Benefício: </strong>Organização de dados em tabelas
+              relacionadas; Facilidade para consultar e filtrar informações;
+              Suporte a grandes volumes de dados...
+            </p>
+            <p>
+              Neste módulo, vamos explorar os principais conceitos de bancos de dados, com foco na organização e na estrutura oferecidas pelo Microsoft Azure para garantir alta disponibilidade e desempenho. Prepare-se para entender como esses sistemas funcionam e como eles são projetados para suportar grandes volumes de dados de forma eficiente. Vamos começar nossa jornada no mundo dos bancos de dados! 🚀
+            </p>
+          </div>
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+          <!-- Azure Cosmos DB -->
+          <div id="cosmosDB" class="">
+            <h2 class="section-title">🌌 Azure Cosmos DB</h2>
+            <h4 class="section-title">O que é:</h4>
+            <p>
+              Cosmos DB é um banco de dados NoSQL distribuído globalmente, com
+              alta escalabilidade e baixa latência, oferecido pela Microsoft
+              Azure.
+            </p>
+
+            <h4 class="section-title">Tipos de uso</h4>
+            <p>
+              Ideal para aplicações modernas em .NET, JavaScript, Python, Java,
+              que exigem desempenho em escala global, como apps com usuários em
+              diferentes regiões do mundo.
+            </p>
+
+            <h4 class="section-title">Benefícios</h4>
+            <ul>
+              <li>Distribuição geográfica com um clique</li>
+              <li>Backup automático (contínuo ou periódico)</li>
+              <li>
+                Alta performance com até 1.000 requisições por segundo
+                gratuitamente
+              </li>
+            </ul>
+
+            <p>
+              <em>Palavras-chave: Escalabilidade global</em>
+            </p>
+          </div>
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+          <!-- Azure Database for PostgreSQL -->
+          <div id="postgreSQL" class="">
+            <h2 class="section-title">🐘 Azure Database for PostgreSQL</h2>
+            <p>
+              Serviço de banco de dados relacional gerenciado da Microsoft
+              baseado no PostgreSQL Community Edition. Ele roda na nuvem com
+              alta disponibilidade, backups automáticos, segurança avançada e
+              performance previsível.
+            </p>
+
+            <h4 class="section-title">Tipos de uso</h4>
+            <p>
+              Ideal para aplicações open source que exigem flexibilidade,
+              consultas complexas e suporte a extensões do PostgreSQL. Muito
+              utilizado por startups, projetos acadêmicos, aplicações
+              geoespaciais (com PostGIS), e apps modernos em Python, Node.js,
+              Ruby etc.
+            </p>
+
+            <h4 class="section-title">Benefícios</h4>
+            <ul>
+              <li>
+                Alta disponibilidade embutida e backups automáticos com
+                restauração até 35 dias.
+              </li>
+              <li>
+                Desempenho escalável com dimensionamento elástico em segundos.
+              </li>
+              <li>
+                Totalmente gerenciado: sem necessidade de administrar VMs ou
+                infraestrutura.
+              </li>
+              <li>
+                Segurança corporativa com criptografia em repouso e em trânsito.
+              </li>
+              <li>Compatível com ferramentas e frameworks open source.</li>
+            </ul>
+
+            <h4 class="section-title">Modelos de implantação:</h4>
+            <ul>
+              <li>Servidor único</li>
+              <li>Servidor flexível</li>
+              <li>
+                Hiperescala (Citus) → ideal para cargas de trabalho em grande
+                escala.
+              </li>
+            </ul>
+
+            <p>
+              <em
+                >Palavras-chave: PostgreSQL gerenciado, open source na nuvem,
+                banco relacional, alta disponibilidade, Hiperescala Citus</em
+              >
+            </p>
+          </div>
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+          <!-- Azure SQL -->
+          <div id="mySQL" class="">
+            <h2 class="section-title">💠 Azure SQL</h2>
+            <h4 class="section-title">O que é:</h4>
+            <p>
+              É um banco de dados relacional baseado na nuvem da Microsoft,
+              compatível com SQL Server. Ele roda como um serviço gerenciado
+              (PaaS), o que significa que a própria Azure cuida da
+              infraestrutura, atualizações, segurança e backups.
+            </p>
+
+            <h4 class="section-title">Tipos de uso</h4>
+            <p>
+              Ideal para aplicações que utilizam modelos relacionais e que
+              precisam de transações consistentes, consultas SQL e integridade
+              referencial. Muito utilizado em sistemas corporativos,
+              financeiros, ERPs e CRMs.
+            </p>
+
+            <h4 class="section-title">Benefícios</h4>
+            <ul>
+              <li>
+                Alta escalabilidade: pode começar com poucos megabytes e crescer
+                até 100 TB.
+              </li>
+              <li>
+                Gerenciamento simplificado: backups automáticos, alta
+                disponibilidade, segurança embutida e atualizações feitas pela
+                Azure.
+              </li>
+              <li>
+                Desempenho sob demanda: permite ajustar CPU, memória e
+                armazenamento conforme a necessidade.
+              </li>
+              <li>
+                Integração fácil com aplicações em .NET, Java, Python, entre
+                outras.
+              </li>
+            </ul>
+
+            <p>
+              <em
+                >Palavras-chave: SQL escalável, relacional gerenciado, alta
+                disponibilidade, Azure PaaS, SQL na nuvem</em
+              >
+            </p>
+          </div>
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+          <!-- Azure Database for MySQL -->
+          <div id="azureMySQL" class="">
+            <h2 class="section-title">🐬 Azure Database for MySQL</h2>
+            <p>
+              Serviço de banco de dados relacional open source baseado no MySQL
+              Community Edition, oferecido como PaaS (Plataforma como Serviço)
+              no Azure. Compatível com aplicações modernas e tradicionais que
+              usam MySQL.
+            </p>
+
+            <h4 class="section-title">Tipos de uso</h4>
+            <p>
+              Ideal para sistemas web, blogs (WordPress), e-commerce, e
+              aplicações que utilizam linguagens como PHP, Python, Node.js. É
+              multiplataforma e muito usado por empresas que preferem soluções
+              open source com custo mais acessível.
+            </p>
+
+            <h4 class="section-title">Benefícios</h4>
+            <ul>
+              <li>Open source e mantido por uma comunidade ativa.</li>
+              <li>
+                100% gerenciado pela Microsoft (sem necessidade de cuidar da
+                infraestrutura).
+              </li>
+              <li>Alta disponibilidade garantida (SLA de até 99,99%).</li>
+              <li>Compatível com várias clouds (Azure, AWS, GCP).</li>
+              <li>
+                Backups automáticos, segurança avançada e atualizações
+                contínuas.
+              </li>
+              <li>
+                Integração com o ecossistema Azure (Monitoramento, Security
+                Center etc).
+              </li>
+            </ul>
+
+            <p>
+              <em
+                >Palavras-chave: MySQL gerenciado, open source, relacional,
+                WordPress, PHP, Python, PaaS</em
+              >
+            </p>
+          </div>
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+          <!-- Azure SQL vs. Azure Database for MySQL -->
+          <div id="diferenca" class="">
+            <h2 class="section-title">
+              ⚖️ Azure SQL vs. Azure Database for MySQL
+            </h2>
+
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover align-middle">
+                <thead class="table-light">
+                  <tr>
+                    <th>Característica</th>
+                    <th>Azure SQL</th>
+                    <th>Azure Database for MySQL</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Tecnologia base</td>
+                    <td>SQL Server (Microsoft)</td>
+                    <td>MySQL Community Edition (Open Source)</td>
+                  </tr>
+                  <tr>
+                    <td>Fornecedor original</td>
+                    <td>Microsoft</td>
+                    <td>Oracle (MySQL) – mantido pela comunidade</td>
+                  </tr>
+                  <tr>
+                    <td>Licença</td>
+                    <td>
+                      Proprietária (paga, inclui licenciamento do SQL Server)
+                    </td>
+                    <td>Open source (sem custo de licença)</td>
+                  </tr>
+                  <tr>
+                    <td>Modelo de dados</td>
+                    <td>Relacional</td>
+                    <td>Relacional</td>
+                  </tr>
+                  <tr>
+                    <td>Integração com produtos MS</td>
+                    <td>Alta (Power BI, Excel, .NET, Azure DevOps)</td>
+                    <td>Média (via conectores)</td>
+                  </tr>
+                  <tr>
+                    <td>Plataformas suportadas</td>
+                    <td>Windows, Azure</td>
+                    <td>Windows, Linux, Azure, AWS, GCP</td>
+                  </tr>
+                  <tr>
+                    <td>Linguagens comuns</td>
+                    <td>C#, .NET, Java, Power Apps</td>
+                    <td>PHP, Python, Node.js, Java</td>
+                  </tr>
+                  <tr>
+                    <td>Popularidade</td>
+                    <td>Alta em ambientes corporativos Microsoft</td>
+                    <td>Alta na web e em aplicações open source</td>
+                  </tr>
+                  <tr>
+                    <td>Casos de uso típicos</td>
+                    <td>Sistemas internos, BI corporativo, ERPs</td>
+                    <td>Web apps, WordPress, e-commerces, APIs REST</td>
+                  </tr>
+                  <tr>
+                    <td>Preço</td>
+                    <td>Geralmente mais alto (licenciamento + recursos)</td>
+                    <td>Mais acessível (sem licença, só infraestrutura)</td>
+                  </tr>
+                  <tr>
+                    <td>Backup e segurança</td>
+                    <td>Incluídos e automatizados</td>
+                    <td>Incluídos e automatizados</td>
+                  </tr>
+                  <tr>
+                    <td>Alta disponibilidade (HA)</td>
+                    <td>Sim, com SLA de até 99,99%</td>
+                    <td>Sim, com SLA de até 99,99%</td>
+                  </tr>
+                  <tr>
+                    <td>Escalabilidade</td>
+                    <td>Alta (inclusive até 100 TB)</td>
+                    <td>Alta (configurável conforme uso)</td>
+                  </tr>
+                  <tr>
+                    <td>Gerenciado pelo Azure?</td>
+                    <td>Sim, como PaaS</td>
+                    <td>Sim, como PaaS</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4 class="mt-4">📝 Resumo Simples:</h4>
+            <p>
+              <strong>Azure SQL</strong> é melhor se você já está no ecossistema
+              Microsoft, precisa de alta integração com BI e ferramentas MS, ou
+              usa .NET.
+            </p>
+            <p>
+              <strong>Azure Database for MySQL</strong> é ideal para apps open
+              source, web apps, uso com PHP/Python, e quando você quer
+              economizar com licenças.
+            </p>
+          </div>
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+          <!-- Resumo Final – Migração de Banco de Dados para a Nuvem (Azure) -->
+          <div id="resumo" class="">
+            <h2 class="section-title">
+              ✅ Resumo Final – Migração de Banco de Dados para a Nuvem (Azure)
+            </h2>
+
+            <p>
+              Se você decidiu migrar o banco de dados da sua aplicação para a
+              nuvem da Microsoft (Azure), saiba que há várias opções de serviços
+              disponíveis, como:
+            </p>
+
+            <ul>
+              <li>
+                <strong>Azure SQL Database</strong> – baseado no SQL Server,
+                ideal para ambientes Microsoft.
+              </li>
+              <li>
+                <strong>Azure Database for MySQL</strong> – open source, ótimo
+                para apps web e WordPress.
+              </li>
+              <li>
+                <strong>Azure Database for PostgreSQL</strong> – flexível,
+                poderoso e também open source.
+              </li>
+              <li>
+                <strong>Azure Cosmos DB</strong> – banco de dados NoSQL para
+                dados não relacionais e altamente distribuídos.
+              </li>
+            </ul>
+
+            <table class="table table-bordered table-hover mt-3">
+              <thead class="table-dark">
+                <tr>
+                  <th>Banco de Dados</th>
+                  <th>Tipo</th>
+                  <th>Principais Benefícios</th>
+                  <th>Palavra-chave</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Azure SQL Database</strong></td>
+                  <td>Relacional (SQL)</td>
+                  <td>
+                    Alta compatibilidade com SQL Server, ideal para apps
+                    corporativas em ambiente Microsoft.
+                  </td>
+                  <td>Compatibilidade</td>
+                </tr>
+                <tr>
+                  <td><strong>Azure Database for MySQL</strong></td>
+                  <td>Relacional (Open Source)</td>
+                  <td>
+                    Custo-benefício, ótimo para apps web e CMS como WordPress.
+                  </td>
+                  <td>Popularidade</td>
+                </tr>
+                <tr>
+                  <td><strong>Azure Database for PostgreSQL</strong></td>
+                  <td>Relacional (Open Source)</td>
+                  <td>
+                    Suporte avançado a dados geoespaciais e consultas complexas.
+                  </td>
+                  <td>Flexibilidade</td>
+                </tr>
+                <tr>
+                  <td><strong>Azure Cosmos DB</strong></td>
+                  <td>NoSQL</td>
+                  <td>
+                    Baixa latência global, escalabilidade automática, ideal para
+                    apps modernos e distribuídos.
+                  </td>
+                  <td>Escalabilidade</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h4 class="section-title">🔄 Como funciona a migração</h4>
+            <ol>
+              <li>
+                Crie uma instância do serviço escolhido no Azure (ex: Azure
+                Database for MySQL).
+              </li>
+              <li>
+                Use a ferramenta gratuita do Azure chamada
+                <strong>Database Migration Service (DMS)</strong> para
+                transferir seus dados da estrutura local para a nuvem.
+              </li>
+              <li>
+                Informe os dados de origem e destino (como login e instância).
+              </li>
+              <li>
+                A ferramenta copia os dados automaticamente — para bancos
+                pequenos (ex: 20 GB), a migração leva apenas alguns minutos.
+              </li>
+              <li>
+                Atualize sua aplicação para apontar para o novo banco de dados
+                na nuvem.
+              </li>
+            </ol>
+
+            <h4 class="section-title">💡 Vantagens dessa migração</h4>
+            <ul>
+              <li>Alta disponibilidade e escalabilidade.</li>
+              <li>Menos tempo com infraestrutura e manutenção.</li>
+              <li>Segurança e backups automáticos.</li>
+              <li>
+                Possibilidade de manter a linguagem/plataforma atual (PHP,
+                Python, .NET etc).
+              </li>
+              <li>
+                Economia com licenças (no caso de MySQL e PostgreSQL, por serem
+                open source).
+              </li>
+            </ul>
+          </div>
+
+          <!-- Separador -->
+          <div class="my-5">
+            <hr class="custom-divider" />
+          </div>
+
+          <h1 id="monitoramento" class="mb-4">📝 1. Monitoramento</h1>
+          <!-- ainda vou fazer -->
+          <em>⚠Finalizo amanhã 🥲</em>
+          <!-- <img
+            src="../imagens/image.png"
+            alt="Diagrama da estrutura da Azure com regiões e zonas de disponibilidade"
+            class="custom-img my-3"
+          /> -->
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-left mt-5">
+        <a href="../index.html" class="btn btn-outline-primary btn-lg shadow-lg rounded-pill px-4 py-2">
+          <i class="bi bi-house-door-fill"></i> Voltar para a página inicial
+        </a>
+      </div>
+      
+    </div>
+  </body>
+</html>

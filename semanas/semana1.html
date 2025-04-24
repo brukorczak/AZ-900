@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formação Cloud Computing</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="semanas.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col-md-3 sidebar">
+          <h5><strong>Conteúdo</strong></h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#introducao" class="text-decoration-none glow-hover"
+                >Introdução ao Cloud Computing</a
+              >
+            </li>
+            <li>
+              <a href="#modelos" class="text-decoration-none glow-hover"
+                >Modelos e Tipos de Nuvem</a
+              >
+            </li>
+            <li>
+              <a href="#capexOpex" class="text-decoration-none glow-hover"
+                >CAPEX vs OPEX</a
+              >
+            </li>
+            <li>
+              <a href="#cli" class="text-decoration-none glow-hover"
+                >CLI (Azure Command-Line Interface)</a
+              >
+            </li>
+            <li>
+              <a href="#tipos" class="text-decoration-none glow-hover"
+                >TIPOS DE SERVIÇO DE NUVEM</a
+              >
+            </li>
+            <li>
+              <a href="#grupo" class="text-decoration-none glow-hover"
+                >Grupo de recursos</a
+              >
+            </li>
+            <li>
+              <a href="#estrutura" class="text-decoration-none glow-hover"
+                >Estrutura, Regiões e AZ (Zonas de Disponibilidade)</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-9 main-content">
+          <div id="introducao" class="">
+            <h1 class="mb-4">🌩️ Conhecendo Cloud Computing</h1>
+            <p>
+              A computação em nuvem (Cloud Computing) revolucionou a forma como
+              consumimos tecnologia. Ela permite que empresas e usuários acessem
+              serviços como armazenamento, servidores e software por meio da
+              internet — sem depender de uma infraestrutura local.
+            </p>
+            <p>
+              Com modelos como <strong>IaaS</strong>, <strong>PaaS</strong> e
+              <strong>SaaS</strong>, e tipos de nuvem como
+              <strong>privada</strong>, <strong>pública</strong> e
+              <strong>híbrida</strong>, a nuvem entrega
+              <strong>flexibilidade</strong>, <strong>segurança</strong>,
+              <strong>redução de custos</strong> e
+              <strong>agilidade</strong> para desenvolver aplicações e escalar
+              negócios com velocidade.
+            </p>
+            <p>
+              Nesta formação, você vai entender os fundamentos da nuvem e
+              aprender como a estrutura da Microsoft Azure se organiza para
+              garantir alta disponibilidade e desempenho. Bora mergulhar nesse
+              universo? 🚀
+            </p>
+
+            <h2 class="section-title">1. O que é Cloud Computing?</h2>
+            <p>
+              Cloud Computing é a entrega de serviços de TI (como servidores,
+              armazenamento e software) via Internet, permitindo acesso sob
+              demanda, escalabilidade e redução de custos sem a necessidade de
+              infraestrutura física própria.
+            </p>
+          </div>
+          <div id="modelos">
+            <h2 class="section-title">2. Modelos de Cloud</h2>
+            <ul>
+              <li><strong>IaaS</strong> – Infraestrutura como Serviço</li>
+              <p>
+                Fornece acesso a recursos de computação e armazenamento via
+                Internet, permitindo alugar servidores, máquinas virtuais, redes
+                e sistemas operacionais conforme a necessidade.
+              </p>
+              <li><strong>PaaS</strong> – Plataforma como Serviço</li>
+              <p>
+                Oferece ferramentas para desenvolvimento e hospedagem de
+                aplicativos Web e móveis, sem a necessidade de gerenciar
+                infraestrutura como servidores e bancos de dados.
+              </p>
+              <li><strong>SaaS</strong> – Software como Serviço</li>
+              <p>
+                Disponibiliza aplicativos via Internet, permitindo que usuários
+                acessem software hospedado na nuvem em múltiplos dispositivos
+                sem precisar instalá-los localmente.
+              </p>
+            </ul>
+
+            <h2 class="section-title">3. Tipos de Nuvem</h2>
+            <ul>
+              <li><strong>Privada</strong>: Mais controle e segurança</li>
+              <p>
+                Uso exclusivo por uma única organização, oferecendo mais
+                controle, segurança e personalização. <br />
+                <strong>é usada:</strong> Bancos, órgãos governamentais e
+                empresas que lidam com dados sensíveis, garantindo maior
+                segurança e conformidade regulatória.
+              </p>
+              <li><strong>Pública</strong>: Escalável e com baixo custo</li>
+              <p>
+                Infraestrutura compartilhada gerenciada por um provedor externo,
+                com baixo custo, alta escalabilidade e sem manutenção. <br />
+                <strong>Onde é usada:</strong> Serviços de email, armazenamento
+                online (Google Drive, OneDrive) e aplicativos SaaS, onde a
+                necessidade de custo reduzido e escalabilidade é prioridade.
+                lhada gerenciada por um provedor externo, com baixo custo, alta
+                escalabilidade e sem manutenção
+              </p>
+              <li><strong>Híbrida</strong>: Combinação das duas</li>
+              <p>
+                Combina nuvem privada e pública, permitindo maior flexibilidade,
+                conformidade regulatória e melhor aproveitamento de recursos
+                locais. <br />
+                <strong>Onde é usada:</strong> Empresas que precisam armazenar
+                dados sensíveis em nuvem privada, mas utilizam a nuvem pública
+                para processamento de grandes volumes de dados ou picos de
+                demanda, como hospitais e e-commerces.
+              </p>
+            </ul>
+          </div>
+
+          <h4 class="section-title">Benefícios</h4>
+          <ul>
+            <li>
+              <strong>Flexibilidade e escalabilidade</strong> - Permite que
+              empresas se adaptem rapidamente, fornecendo infraestrutura e
+              serviços sob demanda sem necessidade de investimentos pesados.
+            </li>
+            <li>
+              <strong>Custo sob demanda (pay-as-you-go)</strong> - Modelo
+              escalável onde se paga apenas pelo que é usado, reduzindo gastos
+              com infraestrutura e manutenção.
+            </li>
+            <li>
+              <strong>Segurança e backup automatizado</strong> - Oferece backups
+              automáticos e proteção contra falhas, ataques cibernéticos e
+              desastres, garantindo integridade dos dados.
+            </li>
+            <li>
+              <strong>Prototipagem rápida</strong> - Facilita inovação e testes
+              ágeis, permitindo criação e implantação de aplicativos sem
+              infraestrutura complexa.
+            </li>
+            <li>
+              <strong>Colaboração em tempo real</strong> - Acesso remoto a
+              arquivos e controle de permissões otimizam o trabalho em equipe e
+              a produtividade.
+            </li>
+          </ul>
+
+          <div id="capexOpex" class="">
+            <h2 class="section-title">4. CAPEX vs OPEX</h2>
+            <p>
+              <strong>CAPEX (Despesas de Capital)</strong>: Investimento em
+              infraestrutura física (servidores, data centers).<br />
+              <strong>Exemplo:</strong> Comprar servidores próprios para um data
+              center. <br /><br />
+              <strong>OPEX (Despesas Operacionais)</strong>: Gastos
+              operacionais, como uso mensal do Azure.<br />
+              <strong>Exemplo:</strong> Pagar pelo uso do Azure mensalmente
+              (modelo "pay-as-you-go").
+            </p>
+          </div>
+
+          <div id="cli">
+            <h2 class="section-title">5. CLI – Azure Command Line Interface</h2>
+            <p>
+              Ferramenta de linha de comando da Azure para automatizar tarefas
+              na plataforma. Ideal para desenvolvedores e administradores.
+            </p>
+          </div>
+          <!-- Separador -->
+          <div class="my-5">
+            <hr class="custom-divider" />
+          </div>
+
+          <div id="tipos">
+            <h1 class="mb-4">📝 1. Tipos de Serviço de Nuvem</h1>
+            <div id="grupo">
+              <h2 class="section-title">O que é Grupo de Recursos</h2>
+              <p>
+                Um <strong>grupo de recursos</strong> no Azure é uma coleção de
+                recursos relacionados (como máquinas virtuais, bancos de dados,
+                redes) que são gerenciados como uma única entidade.
+              </p>
+
+              <h4 class="section-title">Benefício:</h4>
+              <ul>
+                <li>
+                  <strong>Gerenciamento centralizado:</strong> Permite a gestão,
+                  monitoramento e acesso aos recursos de forma mais organizada e
+                  simplificada.
+                </li>
+                <li>
+                  <strong>Facilidade de implementação:</strong> Agrupamento de
+                  recursos facilita a criação, controle de permissões e
+                  organização de ambientes.
+                </li>
+              </ul>
+
+              <h4 class="section-title">Tipo de Uso:</h4>
+              <p>
+                Usado para organizar recursos com base em seu ciclo de vida,
+                como grupos de recursos por projeto, aplicação ou ambiente
+                (produção, desenvolvimento).
+              </p>
+
+              <h4 class="section-title">Palavras-chave:</h4>
+              <p>
+                Organização, gerenciamento, ciclo de vida, controle de
+                permissões, Azure, recursos agrupados.
+              </p>
+            </div>
+          </div>
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+          <div id="estrutura">
+            <h1 class="mb-4">
+              📝 2. Estrutura, Regiões e AZ (Zonas de Disponibilidade)
+            </h1>
+
+            <h2 class="section-title">O que é:</h2>
+            <ul>
+              <li>
+                A <strong>estrutura</strong> do Azure é composta por
+                <strong>geográficas e Zonas de Disponibilidade (AZ).</strong>
+              </li>
+              <li>
+                Uma <strong>região</strong> é um local geográfico onde os
+                centros de dados do Azure estão localizados.
+              </li>
+              <li>
+                Uma <strong>Zona de Disponibilidade (AZ)</strong> é uma unidade
+                de falha independente dentro de uma região. Uma região pode ter
+                várias AZs para garantir alta disponibilidade
+              </li>
+            </ul>
+
+            <h4 class="section-title">Benefício:</h4>
+            <ul>
+              <li>
+                <strong>Alta disponibilidade:</strong> As Zonas de
+                Disponibilidade oferecem redundância para serviços, garantindo
+                maior resiliência e continuidade do serviço.
+              </li>
+              <li>
+                <strong>Desempenho otimizado:</strong> Escolher a região mais
+                próxima do usuário pode melhorar a latência.
+              </li>
+              <li>
+                <strong>Escalabilidade:</strong> Recursos podem ser distribuídos
+                entre regiões e AZs para suportar alta demanda.
+              </li>
+            </ul>
+
+            <h4 class="section-title">Tipo de Uso:</h4>
+            <ul>
+              <li>
+                Usado para alocar recursos de computação, armazenamento, e redes
+                de forma eficiente e resiliente.
+              </li>
+              <li>
+                Importante para arquiteturas de alta disponibilidade e
+                recuperação de desastres.
+              </li>
+            </ul>
+
+            <h4 class="section-title">Palavras-chave:</h4>
+            <p>
+              Regiões, Zonas de Disponibilidade, alta disponibilidade,
+              redundância, escalabilidade, falha independente, latência, Azure.
+            </p>
+
+            <ul>
+              <li>
+                <strong>Regiões</strong>: Localizações geográficas com data
+                centers Azure
+              </li>
+              <li>
+                <strong>Zonas de Disponibilidade</strong>: Unidades
+                independentes para garantir alta disponibilidade
+              </li>
+            </ul>
+            <img
+              src="../imagens/image.png"
+              alt="Diagrama da estrutura da Azure com regiões e zonas de disponibilidade"
+              class="custom-img my-3"
+            />
+            <p>
+              <em>Curiosidade: uma região Azure possui no mínimo 3 zonas!</em>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-left mt-5">
+        <a
+          href="../index.html"
+          class="btn btn-outline-primary btn-lg shadow-lg rounded-pill px-4 py-2"
+        >
+          <i class="bi bi-house-door-fill"></i> Voltar para a página inicial
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
