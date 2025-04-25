@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semana 6 - Monitoramento</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="semanas.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col-md-3 sidebar">
+          <h5><strong>Conteúdo</strong></h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#monitoramento" class="text-decoration-none glow-hover"
+                >MONITORAMENTO</a
+              >
+            </li>
+            <li>
+              <a href="#iot" class="text-decoration-none glow-hover">IOT</a>
+            </li>
+            <li>
+              <a href="#sphere" class="text-decoration-none glow-hover"
+                >azure sphere</a
+              >
+            </li>
+            <li>
+              <a href="#bigData" class="text-decoration-none glow-hover"
+                >big data e analytics</a
+              >
+            </li>
+            <li>
+              <a href="#mlCognitiveBot" class="text-decoration-none glow-hover"
+                >machine learning, cognitive service, azure bot service
+              </a>
+            </li>
+            <li>
+              <a href="#serveless" class="text-decoration-none glow-hover"
+                >serveless compulting</a
+              >
+            </li>
+            <li>
+              <a href="#devOps" class="text-decoration-none glow-hover"
+                >Develop your apps with DevOps and GitHub</a
+              >
+            </li>
+            <li>
+              <a href="#amt" class="text-decoration-none glow-hover"
+                >Azure Management Tools - Objecive Domain</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-9 main-content">
+          <!-- Banco de Dados & Monitoramento -->
+          <!-- <div id="bcd" class="">
+            <h1 class="mb-4">Monitoramento</h1> -->
+
+          <!-- Monitoramento -->
+<div id="monitoramento" class="">
+  <h1 class="mb-4">Monitoramento</h1>
+  <p>
+    <strong>O que é:</strong> Monitoramento é a prática de acompanhar e analisar o desempenho de sistemas, detectando e resolvendo problemas rapidamente.
+  </p>
+  <p>
+    <strong>(Para leigos):</strong> O monitoramento é como um sistema de vigilância que fica de olho em tudo o que acontece nos aplicativos e infraestrutura de TI. Ele ajuda a garantir que tudo esteja funcionando bem e, se algo der errado, detecta o problema rapidamente para corrigir antes que afete os usuários.
+  </p>
+  <p>
+    <strong>Tipos de uso:</strong> 
+    Monitoramento de servidores, redes, aplicativos e sistemas em tempo real. 
+    Coleta de métricas e logs para análise e diagnóstico de falhas. 
+    Utilização de ferramentas como Azure Monitor para análise de dados e alertas.
+  </p>
+  <p>
+    <strong>(Para leigos no dia a dia):</strong> É como se o monitoramento fosse uma câmera de segurança para os sistemas de TI. Ele observa tudo o que acontece e, se algo sair do normal, avisa para que o problema seja resolvido antes que as pessoas percebam.
+  </p>
+  <p>
+    <strong>Benefícios:</strong>
+    Detecta problemas antes que eles causem impacto nas operações.
+    Garante que os sistemas funcionem de maneira mais eficiente.
+    Permite a correção de falhas rapidamente, sem prejudicar os usuários.
+  </p>
+  <p>
+    <strong>Palavras-chave:</strong> Monitoramento, métricas, logs, diagnóstico, desempenho, falhas, Azure Monitor, segurança, infraestrutura, nuvem.
+  </p>
+  <p>
+    Neste módulo, vamos ver como o monitoramento funciona no Azure e como as ferramentas de monitoramento ajudam a acompanhar o que está acontecendo com os sistemas. Vamos aprender a identificar e resolver problemas nos aplicativos, na infraestrutura e na segurança da nuvem, antes que eles causem algum impacto.
+  </p>
+  
+</div>
+
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+         <!-- Azure IoT -->
+<div id="iot">
+  <h2 class="section-title">🌐 IoT</h2>
+
+  <h4 class="section-title">O que é IoT (Internet das Coisas):</h4>
+  <p>
+    IoT é a conexão de dispositivos físicos (como sensores, câmeras, placas, máquinas, etc.) à internet, permitindo coleta, envio e recebimento de dados entre eles e a nuvem. <br />
+    Na Azure, isso significa conectar esses dispositivos a serviços que gerenciam, monitoram, atualizam e garantem a segurança da comunicação com a nuvem.
+  </p>
+
+  <h4 class="section-title">O que é:</h4>
+  <p>
+    IoT é a tecnologia que conecta objetos físicos à internet, permitindo que eles enviem e recebam dados automaticamente.
+  </p>
+
+  <h4 class="section-title">Para leigos:</h4>
+  <p>
+    IoT é como se fosse um sistema nervoso para objetos. Ele conecta aparelhos, como câmeras, sensores e até mesmo eletrodomésticos, à internet. Isso permite que eles se comuniquem entre si e com a nuvem, facilitando o monitoramento e controle de maneira automatizada e inteligente.
+  </p>
+
+  <h4 class="section-title">Tipos de uso:</h4>
+  <ul>
+    <li>Monitoramento remoto (como controlar a temperatura de um ambiente ou a produção de uma fábrica).</li>
+    <li>Coleta massiva de dados de sensores (telemetria).</li>
+    <li>Automação de processos industriais (máquinas que funcionam automaticamente).</li>
+    <li>Atualização remota de dispositivos (como quando o celular recebe atualizações automaticamente).</li>
+    <li>Gerenciamento centralizado de dispositivos conectados (controlar tudo de um único local).</li>
+  </ul>
+
+  <h4 class="section-title">Para leigos no dia a dia:</h4>
+  <p>
+    Imagina que seus aparelhos de casa, como o ar-condicionado, a geladeira ou até a câmera de segurança, estão "conversando" com a internet e trocando informações. Isso é o que acontece com o IoT. Por exemplo, seu relógio inteligente pode monitorar seu batimento cardíaco e enviar os dados para um app, enquanto o termostato ajusta automaticamente a temperatura da sua casa baseado no seu comportamento.
+  </p>
+
+  <h4 class="section-title">Benefícios:</h4>
+  <ul>
+    <li>Escalabilidade: é possível conectar milhares de dispositivos sem comprometer o desempenho.</li>
+    <li>Comunicação segura e confiável entre dispositivos e a nuvem.</li>
+    <li>Atualizações remotas de dispositivos, como se fosse um "update" de celular.</li>
+    <li>Análise de dados de sensores em tempo real (monitorar e agir rapidamente).</li>
+    <li>Integração com outros serviços da Azure (como Machine Learning e análises de dados).</li>
+  </ul>
+
+  <h4 class="section-title">Palavras-chave para lembrar:</h4>
+  <p>
+    <strong>IoT Hub</strong> → Comunicação e controle dos dispositivos.<br />
+    <strong>IoT Central</strong> → Gestão fácil e rápida (SaaS).<br />
+    <strong>Defender for IoT</strong> → Segurança dos dispositivos e redes.<br />
+    Telemetria, ingestão de dados, bidirecional, update remoto, sensor, device, monitoramento, escala.
+  </p>
+</div>
+
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+         <!-- Azure Sphere -->
+<div id="sphere">
+  <h2 class="section-title">🔐 Azure Sphere</h2>
+
+  <h4 class="section-title">O que é?</h4>
+  <p>
+    O Azure Sphere é uma solução de segurança ponta a ponta para dispositivos IoT. Ele protege hardware, software e serviços conectados à internet, garantindo que os dispositivos sejam seguros desde o chip até a nuvem.
+  </p>
+
+  <h4 class="section-title">O que é:</h4>
+  <p>
+    O Azure Sphere é uma solução da Microsoft que garante que seus dispositivos IoT sejam protegidos contra ataques e vulnerabilidades. Ele combina hardware, software e nuvem para garantir a segurança de ponta a ponta.
+  </p>
+
+  <h4 class="section-title">Para leigos:</h4>
+  <p>
+    Imagine que você tem um dispositivo conectado à internet, como uma câmera de segurança ou um termostato inteligente. O Azure Sphere é como um "colete à prova de balas" para esses dispositivos, garantindo que eles não sejam invadidos ou comprometidos.
+  </p>
+
+  <h4 class="section-title">Tipos de uso:</h4>
+  <ul>
+    <li>Criar dispositivos embarcados com alta segurança desde o projeto.</li>
+    <li>Garantir que nenhum dispositivo IoT seja uma porta de entrada para ataques.</li>
+    <li>Ideal para dispositivos industriais, eletrodomésticos inteligentes, sensores críticos, etc.</li>
+  </ul>
+
+  <h4 class="section-title">Para leigos no dia a dia:</h4>
+  <p>
+    Se você tem dispositivos em casa que são conectados à internet, como câmeras ou até sua geladeira inteligente, o Azure Sphere garante que esses dispositivos estejam sempre protegidos contra hackers, mantendo seus dados e a operação do aparelho seguros.
+  </p>
+
+  <h4 class="section-title">Benefícios:</h4>
+  <ul>
+    <li>Segurança de ponta a ponta (hardware + software + nuvem).</li>
+    <li>Atualizações automáticas de segurança (tipo o Windows Update, mas para seu sensor!).</li>
+    <li>Proteção contra ataques, mesmo que o dispositivo esteja offline por um tempo.</li>
+    <li>Autenticação forte dos dispositivos antes de qualquer comunicação.</li>
+  </ul>
+
+  <h4 class="section-title">Palavras-chave para lembrar:</h4>
+  <p>
+    <strong>Segurança ponta a ponta</strong>, <strong>Microcontrolador certificado</strong>, <strong>Azure Sphere OS</strong>, <strong>Atualizações automáticas</strong>, <strong>Dispositivos confiáveis</strong>, <strong>AS3 – Azure Sphere Security Service</strong>.
+  </p>
+
+  <h4 class="section-title">
+    Agora com tudo isso, você tem o quarteto principal de IoT da Azure:
+  </h4>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Serviço</th>
+        <th scope="col">Função Principal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>IoT Hub</strong></td>
+        <td>Comunicação entre nuvem e device</td>
+      </tr>
+      <tr>
+        <td><strong>IoT Central</strong></td>
+        <td>Plataforma SaaS para gerenciar dispositivos</td>
+      </tr>
+      <tr>
+        <td><strong>Defender for IoT</strong></td>
+        <td>Segurança e monitoramento de ameaças</td>
+      </tr>
+      <tr>
+        <td><strong>Azure Sphere</strong></td>
+        <td>Dispositivos já protegidos por design</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+       <!-- Big Data e Analytics -->
+<div id="bigData" class="">
+  <h2 class="section-title">🧠 Big Data e Analytics</h2>
+
+  <h4 class="section-title">O que é:</h4>
+  <p>
+    Big Data e Analytics são ferramentas que ajudam a armazenar, processar e analisar grandes volumes de dados. Esses dados podem ser de qualquer tipo, como números, textos ou imagens. Com essas ferramentas, é possível transformar esses dados em informações valiosas que ajudam na tomada de decisões.
+  </p>
+
+  <h4 class="section-title">O que é:</h4>
+  <p>
+    Big Data refere-se ao enorme volume de dados que são gerados todos os dias e que não podem ser processados com ferramentas tradicionais. O Analytics, por outro lado, são as ferramentas usadas para analisar esses dados e gerar insights úteis, como previsões ou padrões de comportamento.
+  </p>
+
+  <h4 class="section-title">Para leigos:</h4>
+  <p>
+    Imagine que você tem um enorme caderno cheio de números e informações sobre as compras de todos os clientes de uma loja. Big Data seria todo esse monte de informações, e Analytics seria como uma lupa que ajuda a encontrar padrões e prever o que os clientes vão comprar no futuro, ajudando a loja a se preparar melhor.
+  </p>
+
+  <h4 class="section-title">Tipo de uso:</h4>
+  <ul>
+    <li>Análise de grandes volumes de dados (Big Data).</li>
+    <li>Armazenamento e consulta de dados históricos.</li>
+    <li>Construção de Data Warehouses e Data Lakes.</li>
+    <li>Geração de dashboards e relatórios.</li>
+    <li>Machine Learning e Inteligência Artificial.</li>
+    <li>Reconhecimento de padrões e predição de comportamentos.</li>
+  </ul>
+
+  <h4 class="section-title">Para leigos no dia a dia:</h4>
+  <p>
+    Big Data e Analytics podem ser usados para entender como as pessoas se comportam na internet, por exemplo, ajudando empresas a mostrar os produtos certos para as pessoas certas, na hora certa. Também é usado para prever coisas, como o tempo, ou até em diagnósticos médicos, para prever a saúde de um paciente.
+  </p>
+
+  <h4 class="section-title">Serviços no Azure:</h4>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Serviço</th>
+        <th scope="col">Descrição</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Azure Synapse Analytics</strong></td>
+        <td>Plataforma unificada de Data Warehouse e Big Data para consultas, análises e relatórios.</td>
+      </tr>
+      <tr>
+        <td><strong>Azure Data Lake</strong></td>
+        <td>Armazenamento de grande volume de dados em formato bruto. Ideal para análise posterior.</td>
+      </tr>
+      <tr>
+        <td><strong>HDInsight</strong></td>
+        <td>Plataforma gerenciada com suporte a Hadoop, Spark, Hive, Kafka e mais.</td>
+      </tr>
+      <tr>
+        <td><strong>Azure Databricks</strong></td>
+        <td>Ambiente de Apache Spark gerenciado, escalável e colaborativo.</td>
+      </tr>
+      <tr>
+        <td><strong>Power BI (com Azure)</strong></td>
+        <td>Ferramenta de visualização e exploração de dados.</td>
+      </tr>
+      <tr>
+        <td><strong>Azure Stream Analytics</strong></td>
+        <td>Processamento de dados em tempo real, útil para IoT, sensores, logs, etc.</td>
+      </tr>
+      <tr>
+        <td><strong>Azure Machine Learning</strong></td>
+        <td>Criação e operacionalização de modelos de aprendizado de máquina.</td>
+      </tr>
+      <tr>
+        <td><strong>Azure Cognitive Services</strong></td>
+        <td>APIs para tarefas inteligentes: visão computacional, fala, linguagem, busca, etc.</td>
+      </tr>
+      <tr>
+        <td><strong>Azure Bot Service</strong></td>
+        <td>Criação e gerenciamento de bots com linguagem natural e integração em canais diversos.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4 class="section-title">Benefícios:</h4>
+  <ul>
+    <li>Escalabilidade para lidar com petabytes de dados.</li>
+    <li>Análises rápidas com alto desempenho.</li>
+    <li>Integração fácil com outras fontes de dados e serviços Azure.</li>
+    <li>Suporte a modelos de ML e IA.</li>
+    <li>Economia de tempo com serviços gerenciados.</li>
+    <li>Segurança e conformidade em nível corporativo.</li>
+    <li>Insights em tempo real ou histórico.</li>
+  </ul>
+
+  <h4 class="section-title">Palavras-chave:</h4>
+  <p>
+    <em>Insight (Transformar dados brutos em decisões inteligentes)</em>
+  </p>
+</div>
+
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+         <!-- machine learning, cognitive service, azure bot service -->
+<div id="mlCognitiveBot" class="">
+  <h2 class="section-title">
+    💠 Azure Machine Learning, Cognitive Services e Azure Bot Service
+  </h2>
+
+  <h4 class="section-title">Azure Machine Learning</h4>
+  <p>
+    O Azure Machine Learning é uma ferramenta que ajuda as empresas a criar, treinar e colocar em prática modelos de Machine Learning (aprendizado de máquina). Ele usa computadores para aprender com dados e tomar decisões, sem a necessidade de programar tudo manualmente.
+  </p>
+
+  <h4 class="section-title">Azure Cognitive Services</h4>
+  <p>
+    O Azure Cognitive Services oferece APIs prontas que ajudam a realizar tarefas inteligentes, como reconhecer imagens, traduzir textos, entender a fala, analisar sentimentos e muito mais. Com essas ferramentas, não é preciso saber como criar inteligência artificial do zero, você usa serviços já prontos.
+  </p>
+
+  <h4 class="section-title">Azure Bot Service</h4>
+  <p>
+    O Azure Bot Service é uma plataforma para criar e hospedar bots (como o assistente de um site) que interagem com as pessoas de forma inteligente. Ele pode ser usado para conectar bots em plataformas como websites, Teams, Telegram e outros. Além disso, ele entende a linguagem humana através do NLP (Processamento de Linguagem Natural).
+  </p>
+
+  <h4 class="section-title">Benefícios:</h4>
+  <ul>
+    <li>
+      Facilidade para criar, treinar e implementar modelos de aprendizado de máquina com o Azure Machine Learning.
+    </li>
+    <li>
+      Uso de APIs prontas para realizar tarefas inteligentes, como traduzir ou reconhecer imagens, com o Azure Cognitive Services.
+    </li>
+    <li>
+      Criação de bots que entendem a linguagem natural e podem ser usados em vários canais (como sites e aplicativos) com o Azure Bot Service.
+    </li>
+    <li>
+      Implementação de soluções avançadas de inteligência artificial e automação com a integração desses serviços no Azure.
+    </li>
+  </ul>
+
+  <p>
+    <em>
+      Palavras-chave: Machine Learning, Cognitive Services, Bots, NLP, Azure, IA
+    </em>
+  </p>
+</div>
+
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+          <!-- Serverless Computing -->
+<div id="serveless" class="">
+  <h2 class="section-title">🌐 Serverless Computing</h2>
+
+  <h4 class="section-title">O que é?</h4>
+  <p>
+    Serverless Computing, ou computação sem servidor, é uma forma de executar código na nuvem sem se preocupar com os servidores ou a infraestrutura. No modelo Serverless, você só precisa se preocupar com o que o código faz, e o Azure cuida de toda a parte técnica, como os servidores e a escalabilidade.
+  </p>
+
+  <h4 class="section-title">🧠 Tipos de uso</h4>
+  <ul>
+    <li>Respostas rápidas a eventos, como quando um formulário é preenchido ou um e-mail é enviado.</li>
+    <li>Criação de automações sem a necessidade de programar de forma complexa.</li>
+    <li>Escalabilidade sob demanda, ou seja, você paga apenas quando o serviço está sendo usado.</li>
+    <li>Prototipagem rápida de novos serviços ou soluções.</li>
+  </ul>
+
+  <h4 class="section-title">⚙️ Exemplos de serviços Serverless no Azure</h4>
+  <p>
+    <strong>📌 Azure Functions:</strong> Serviço que executa pequenos trechos de código conforme a necessidade. Ideal para tarefas rápidas como cálculos, envio de notificações e outras. Suporta várias linguagens de programação, como Python, JavaScript e .NET.
+  </p>
+  <p>
+    <strong>📌 Azure Logic Apps:</strong> Solução de automação simples, sem a necessidade de programar muito. Permite integrar serviços como Outlook, Excel, Teams, Twitter e muito mais, para criar automações rápidas.
+  </p>
+
+  <h4 class="section-title">✅ Benefícios do Serverless</h4>
+  <ul>
+    <li>Sem necessidade de gerenciar servidores: você foca no que o código faz, o Azure cuida do resto.</li>
+    <li>Custo otimizado: você paga apenas pelo tempo que seu código está rodando, sem custos extras com servidores ociosos.</li>
+    <li>Escalabilidade automática: o sistema ajusta os recursos conforme a demanda, sem você precisar se preocupar com isso.</li>
+    <li>Agilidade no desenvolvimento: ideal para criar soluções rapidamente, como MVPs (produtos mínimos viáveis) e protótipos.</li>
+    <li>Fácil integração com outros serviços e APIs, facilitando a construção de soluções complexas de forma simples.</li>
+  </ul>
+
+  <p>
+    <em>
+      Palavras-chave: Escalável, Automação, Sem servidor, Pagou-usou, Azure Functions, Azure Logic Apps, Event-driven, Low-code / No-code, Prototipagem rápida
+    </em>
+  </p>
+</div>
+
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+          <!--Develop Your Apps with DevOps and GitHub-->
+          <div id="devOps" class="">
+            <h2 class="section-title">
+              🛠️ Develop Your Apps with DevOps and GitHub
+            </h2>
+
+            <p>
+              DevOps é uma abordagem para desenvolvimento de software que visa
+              unir equipes de desenvolvimento e operações, criando um ambiente
+              colaborativo que permite o desenvolvimento contínuo, integração e
+              entrega de aplicativos de forma eficiente e com alta qualidade.
+            </p>
+            <p>
+              O GitHub é uma das principais plataformas utilizadas para
+              versionamento de código e colaboração em projetos de software.
+              Juntas, DevOps e GitHub ajudam equipes a otimizar o ciclo de vida
+              do desenvolvimento de aplicativos, proporcionando integração
+              contínua, testes automatizados e implantações mais rápidas.
+            </p>
+
+            <h4 class="section-title">🖥️ Tipos de uso</h4>
+            <ul>
+              <li>
+                <strong>Automação de build e deploy:</strong> todas as etapas,
+                desde a escrita do código até a implementação, podem ser
+                automatizadas.
+              </li>
+              <li>
+                <strong
+                  >Integração contínua (CI) e entrega contínua (CD):</strong
+                >
+                execute testes e implante seu código automaticamente com rapidez
+                e qualidade.
+              </li>
+              <li>
+                <strong>Colaboração em tempo real:</strong> GitHub e Azure
+                DevOps permitem trabalho em equipe mesmo de locais diferentes.
+              </li>
+            </ul>
+
+            <h4 class="section-title">🚀 Quais são os serviços?</h4>
+
+            <h5>📌 Azure DevOps</h5>
+            <p>
+              Plataforma completa que oferece ferramentas para todas as fases do
+              desenvolvimento:
+            </p>
+            <ul>
+              <li>
+                <strong>Azure Boards:</strong> gestão ágil com Scrum, Kanban
+                etc.
+              </li>
+              <li><strong>Azure Repos:</strong> repositórios Git privados.</li>
+              <li>
+                <strong>Azure Pipelines:</strong> automação de builds e deploys.
+              </li>
+              <li>
+                <strong>Azure Test Plans:</strong> execução de testes manuais e
+                automatizados.
+              </li>
+              <li>
+                <strong>Azure Artifacts:</strong> gestão de pacotes e
+                dependências.
+              </li>
+            </ul>
+
+            <h5>📌 GitHub</h5>
+            <ul>
+              <li>
+                <strong>Repositórios Git:</strong> para versionamento e
+                colaboração.
+              </li>
+              <li>
+                <strong>Pull Requests:</strong> revisão de código integrada.
+              </li>
+              <li>
+                <strong>GitHub Actions:</strong> pipelines CI/CD diretamente no
+                GitHub.
+              </li>
+            </ul>
+
+            <h5>📌 GitHub Actions for Azure</h5>
+            <ul>
+              <li>Automação de deploys no Azure.</li>
+              <li>Execução de testes em ambientes Azure.</li>
+              <li>Pipelines customizados CI/CD com GitHub.</li>
+            </ul>
+
+            <h5>📌 Azure DevTest Labs</h5>
+            <p>Ambientes de desenvolvimento e teste com baixo custo:</p>
+            <ul>
+              <li>Criação de ambientes de teste com VMs no Azure.</li>
+              <li>Reset de ambientes com segurança.</li>
+              <li>Reutilização de ambientes sem sobrecarregar o orçamento.</li>
+            </ul>
+
+            <h4 class="section-title">✅ Benefícios</h4>
+            <ul>
+              <li>Integração entre desenvolvimento e operações.</li>
+              <li>Automação que reduz erros e acelera entregas.</li>
+              <li>Facilidade de escalar projetos.</li>
+              <li>Controle de custos com DevTest Labs.</li>
+              <li>Versionamento eficiente com GitHub.</li>
+            </ul>
+
+            <h4 class="section-title">🔑 Palavras-chave</h4>
+            <p>
+              DevOps, GitHub, Azure DevOps, CI/CD, Automação, GitHub Actions,
+              Azure DevTest Labs, Integração contínua, Entrega contínua,
+              Gerenciamento de código
+            </p>
+            
+          </div>
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+          <!--Azure Management Tools - Objective Domain-->
+          <div id="amt" class="">
+            <h2 class="section-title">
+              🛠️ Azure Management Tools - Objective Domain
+            </h2>
+
+            <p>
+              <strong>O que é:</strong> Azure Management Tools são ferramentas
+              projetadas para gerenciar, monitorar e configurar recursos no
+              Azure de forma eficiente, oferecendo diferentes interfaces para
+              interação, como a interface gráfica e interfaces de linha de
+              comando.
+            </p>
+
+            <p>
+              <strong>Tipo de uso:</strong> Essas ferramentas são usadas para
+              administrar e automatizar a gestão de recursos na plataforma de
+              nuvem Azure, proporcionando controle sobre máquinas virtuais,
+              redes, bancos de dados, entre outros serviços. Elas atendem desde
+              desenvolvedores a administradores de sistemas e arquitetos de
+              soluções.
+            </p>
+
+            <h4 class="section-title">🔧 Formas de Gerenciar no Azure (ARM)</h4>
+            <ul>
+              <li>
+                <strong>💻 Azure Portal:</strong> Interface gráfica baseada na
+                web, onde você pode visualizar, gerenciar e configurar recursos
+                do Azure com uma experiência intuitiva e acessível.
+              </li>
+              <li>
+                <strong>🖥️ Azure PowerShell:</strong> Interface de linha de
+                comando que permite automação e gerenciamento dos recursos do
+                Azure usando scripts no PowerShell, ideal para quem precisa de
+                processos repetitivos.
+              </li>
+              <li>
+                <strong>📱 Azure Mobile App:</strong> Permite acessar e
+                gerenciar recursos do Azure diretamente do smartphone, ideal
+                para usuários que precisam de mobilidade.
+              </li>
+              <li>
+                <strong>🖥️ Command Line Interface (CLI):</strong> Interface de
+                linha de comando que oferece uma alternativa ao PowerShell,
+                utilizando comandos mais simples e compatíveis com múltiplos
+                sistemas operacionais.
+              </li>
+              <li>
+                <strong>🌐 Azure REST API:</strong> Interface programática que
+                permite interagir com o Azure por meio de chamadas HTTP, ideal
+                para integração com outros sistemas ou para desenvolvedores que
+                desejam personalizar o gerenciamento.
+              </li>
+              <li>
+                <strong>💻 Azure Cloud Shell:</strong> Ambiente interativo
+                baseado na web que permite executar scripts e comandos de
+                gerenciamento no Azure sem precisar instalar nada, ideal para
+                acesso rápido sem configuração local.
+              </li>
+            </ul>
+
+            <h4 class="section-title">🛠️ Serviços no Azure</h4>
+            <ul>
+              <li>
+                <strong>🔧 Azure Advisor:</strong> Serviço de recomendação que
+                oferece sugestões para melhorar a performance, segurança, alta
+                disponibilidade e redução de custos dos recursos no Azure.
+              </li>
+              <li>
+                <strong>🔨 Azure Resource Manager (ARM) Templates:</strong>
+                Modelos de definição de infraestrutura como código, permitindo a
+                automação na criação e gerenciamento de recursos no Azure de
+                forma replicável e eficiente.
+              </li>
+              <li>
+                <strong>📊 Azure Monitor:</strong> Serviço centralizado para
+                monitoramento e coleta de dados de métricas e logs, permitindo
+                configurar alertas e ações automáticas para gerenciar a saúde e
+                performance dos recursos.
+              </li>
+              <li>
+                <strong>🛠️ Azure Service Health:</strong> Oferece informações
+                detalhadas sobre o status de serviços e regiões do Azure,
+                incluindo alertas sobre interrupções ou problemas, garantindo a
+                continuidade e disponibilidade dos serviços.
+              </li>
+            </ul>
+
+            <h4 class="section-title">✅ Benefícios das Ferramentas</h4>
+            <ul>
+              <li>
+                <strong>🔍 Visibilidade e Controle:</strong> Proporciona
+                monitoramento contínuo e controle granular sobre todos os
+                recursos e serviços da nuvem.
+              </li>
+              <li>
+                <strong>⚙️ Automação e Eficiência:</strong> Facilitam a
+                automação de tarefas repetitivas e a criação de recursos de
+                forma consistente e eficiente, utilizando templates e scripts.
+              </li>
+              <li>
+                <strong>📱 Acessibilidade e Mobilidade:</strong> Permite o
+                gerenciamento remoto através de dispositivos móveis, além de
+                fornecer uma interface acessível de qualquer lugar.
+              </li>
+              <li>
+                <strong>🔒 Segurança e Conformidade:</strong> Facilita a
+                implementação de boas práticas de segurança e oferece
+                recomendações para melhorar a segurança e a conformidade de seus
+                recursos.
+              </li>
+            </ul>
+
+            <p>
+              <strong>Palavra-chave:</strong> Gerenciamento, Automação,
+              Monitoramento, Performance, Segurança, Cloud, Escalabilidade, API,
+              Interface de Comando, Azure
+            </p>
+          </div>
+
+          <!-- <img
+            src="../imagens/image.png"
+            alt="Diagrama da estrutura da Azure com regiões e zonas de disponibilidade"
+            class="custom-img my-3"
+          /> -->
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-left mt-5">
+        <a
+          href="../index.html"
+          class="btn btn-outline-primary btn-lg shadow-lg rounded-pill px-4 py-2"
+        >
+          <i class="bi bi-house-door-fill"></i> Voltar para a página inicial
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

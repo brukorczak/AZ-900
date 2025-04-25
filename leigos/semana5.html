@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semana 5 - Banco de Dados</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="semanas.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col-md-3 sidebar">
+          <h5><strong>Conteúdo</strong></h5>
+          <ul class="list-unstyled">
+            <li><a href="#bcd" class="text-decoration-none glow-hover">BANCO DE DADOS</a></li>
+            <li><a href="#cosmosDB" class="text-decoration-none glow-hover">Azure Cosmos DB</a></li>
+            <li><a href="#postgreSQL" class="text-decoration-none glow-hover">Azure Database for PostgreSQL</a></li>
+            <li><a href="#mySQL" class="text-decoration-none glow-hover">Azure SQL</a></li>
+            <li><a href="#azureMySQL" class="text-decoration-none glow-hover">Azure Database for MySQL</a></li>
+            <li><a href="#diferenca" class="text-decoration-none glow-hover">Azure SQL vs. Azure Database for MySQL</a></li>
+            <li><a href="#resumo" class="text-decoration-none glow-hover">Resumo Final – Migração de Banco de Dados para a Nuvem (Azure)</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-9 main-content">
+          <!-- Banco de Dados -->
+          <div id="bcd" class="">
+            <h1 class="mb-4 text-center">Banco de Dados</h1>
+            <p><strong>Resumo técnico:</strong> Estrutura para armazenar, organizar e acessar informações de forma eficiente.</p>
+            <p><strong>O que é (explicação leiga):</strong> Banco de dados é como uma grande planilha onde você armazena informações, como nome, endereço e e-mail, e depois consegue buscar esses dados rapidamente quando precisar.</p>
+            <p><strong>Tipos de uso:</strong> Usado em sites de compras, sistemas de gestão de clientes e qualquer sistema que precise guardar dados de usuários ou transações.</p>
+            <p><strong>Exemplo prático:</strong> Imagine que você tem um site de vendas. O banco de dados vai armazenar todas as informações dos produtos, dos clientes e das compras feitas.</p>
+            <p><strong>Benefícios:</strong> Facilita a organização e a busca por informações, melhora a performance e garante que os dados estejam seguros e acessíveis quando necessários.</p>
+            <p><em>Palavras-chave: Armazenamento, organização, busca eficiente, dados.</em></p>
+          </div>
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+          <!-- Azure Cosmos DB -->
+          <div id="cosmosDB" class="">
+            <h2 class="section-title">🌌 Azure Cosmos DB</h2>
+            <p><strong>Resumo técnico:</strong> Banco de dados NoSQL distribuído globalmente com alta escalabilidade e baixa latência.</p>
+            <p><strong>O que é (explicação leiga):</strong> É como um banco de dados que consegue crescer e se espalhar pelo mundo rapidamente, para que você possa acessar os dados de qualquer lugar, a qualquer hora.</p>
+            <p><strong>Tipos de uso:</strong> Ideal para aplicativos que têm muitos usuários espalhados pelo mundo e precisam de alta velocidade para acessar dados.</p>
+            <p><strong>Exemplo prático:</strong> Um aplicativo de rede social, como Facebook, precisa de Cosmos DB para que os usuários de diferentes países possam acessar os dados de forma rápida e eficiente.</p>
+            <p><strong>Benefícios:</strong> Escalabilidade global, alta performance e backups automáticos.</p>
+            <p><em>Palavras-chave: NoSQL, escalabilidade global, alta performance.</em></p>
+          </div>
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+          <!-- Azure Database for PostgreSQL -->
+          <div id="postgreSQL" class="">
+            <h2 class="section-title">🐘 Azure Database for PostgreSQL</h2>
+            <p><strong>Resumo técnico:</strong> Banco de dados relacional gerenciado baseado no PostgreSQL.</p>
+            <p><strong>O que é (explicação leiga):</strong> É um banco de dados que organiza dados de forma estruturada, e você não precisa se preocupar em cuidar da infraestrutura porque a Azure faz isso por você.</p>
+            <p><strong>Tipos de uso:</strong> Ideal para aplicativos que precisam de um banco de dados robusto e que suportem consultas complexas.</p>
+            <p><strong>Exemplo prático:</strong> Aplicações como sites de reservas de hotéis ou sistemas de gestão de universidades usam PostgreSQL para organizar dados complexos, como informações de clientes, reservas e cursos.</p>
+            <p><strong>Benefícios:</strong> Alta disponibilidade, backups automáticos, segurança e flexibilidade para escalabilidade.</p>
+            <p><em>Palavras-chave: Relacional, PostgreSQL, backups, segurança.</em></p>
+          </div>
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+          <!-- Azure SQL -->
+          <div id="mySQL" class="">
+            <h2 class="section-title">💠 Azure SQL</h2>
+            <p><strong>Resumo técnico:</strong> Banco de dados relacional baseado no SQL Server, gerenciado pela Azure.</p>
+            <p><strong>O que é (explicação leiga):</strong> É um banco de dados que usa SQL para organizar e acessar informações, como se fosse uma grande planilha, mas mais segura e eficiente. A Azure cuida de toda a parte técnica para você.</p>
+            <p><strong>Tipos de uso:</strong> Usado em sistemas corporativos, como ERP e CRM, que exigem integridade dos dados e transações confiáveis.</p>
+            <p><strong>Exemplo prático:</strong> Um sistema de gestão de vendas que precisa armazenar e consultar dados de clientes, produtos e transações financeiras de forma segura e organizada.</p>
+            <p><strong>Benefícios:</strong> Alta escalabilidade, backups automáticos, segurança embutida e fácil integração com outras tecnologias.</p>
+            <p><em>Palavras-chave: SQL, escalabilidade, PaaS, alta disponibilidade.</em></p>
+          </div>
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+
+          <!-- Azure Database for MySQL -->
+          <div id="azureMySQL" class="">
+            <h2 class="section-title">🐬 Azure Database for MySQL</h2>
+            <p><strong>Resumo técnico:</strong> Banco de dados relacional baseado no MySQL, oferecido como serviço gerenciado.</p>
+            <p><strong>O que é (explicação leiga):</strong> É um banco de dados que usa MySQL para organizar dados de sites, blogs e sistemas de e-commerce, mas sem você precisar gerenciar os servidores, pois a Azure faz isso por você.</p>
+            <p><strong>Tipos de uso:</strong> Ideal para websites, blogs e sistemas de e-commerce que precisam de um banco de dados simples e econômico.</p>
+            <p><strong>Exemplo prático:</strong> Um site de comércio eletrônico que usa MySQL para armazenar dados de produtos e clientes, com a Azure cuidando da segurança e da manutenção do banco de dados.</p>
+            <p><strong>Benefícios:</strong> Baixo custo, alta disponibilidade, fácil integração com o Azure e suporte a várias plataformas.</p>
+            <p><em>Palavras-chave: MySQL, open source, PaaS, baixo custo.</em></p>
+          </div>
+
+          <!-- Mini Separador -->
+          <div class="my-4">
+            <hr class="mini-custom-divider" />
+          </div>
+<!-- Azure SQL vs. Azure Database for MySQL -->
+<!-- Azure SQL vs. Azure Database for MySQL -->
+<div id="diferenca" class="">
+  <h2 class="section-title">
+    ⚖️ Azure SQL vs. Azure Database for MySQL
+  </h2>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover align-middle">
+      <thead class="table-light">
+        <tr>
+          <th>Característica</th>
+          <th>Azure SQL</th>
+          <th>Azure Database for MySQL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tecnologia base</td>
+          <td>SQL Server (Microsoft)</td>
+          <td>MySQL Community Edition (Open Source)</td>
+        </tr>
+        <tr>
+          <td>Fornecedor original</td>
+          <td>Microsoft</td>
+          <td>Oracle (MySQL) – mantido pela comunidade</td>
+        </tr>
+        <tr>
+          <td>Licença</td>
+          <td>Proprietária (paga, inclui licenciamento do SQL Server)</td>
+          <td>Open source (sem custo de licença)</td>
+        </tr>
+        <tr>
+          <td>Modelo de dados</td>
+          <td>Relacional</td>
+          <td>Relacional</td>
+        </tr>
+        <tr>
+          <td>Integração com produtos MS</td>
+          <td>Alta (Power BI, Excel, .NET, Azure DevOps)</td>
+          <td>Média (via conectores)</td>
+        </tr>
+        <tr>
+          <td>Plataformas suportadas</td>
+          <td>Windows, Azure</td>
+          <td>Windows, Linux, Azure, AWS, GCP</td>
+        </tr>
+        <tr>
+          <td>Linguagens comuns</td>
+          <td>C#, .NET, Java, Power Apps</td>
+          <td>PHP, Python, Node.js, Java</td>
+        </tr>
+        <tr>
+          <td>Popularidade</td>
+          <td>Alta em ambientes corporativos Microsoft</td>
+          <td>Alta na web e em aplicações open source</td>
+        </tr>
+        <tr>
+          <td>Casos de uso típicos</td>
+          <td>Sistemas internos, BI corporativo, ERPs</td>
+          <td>Web apps, WordPress, e-commerces, APIs REST</td>
+        </tr>
+        <tr>
+          <td>Preço</td>
+          <td>Geralmente mais alto (licenciamento + recursos)</td>
+          <td>Mais acessível (sem licença, só infraestrutura)</td>
+        </tr>
+        <tr>
+          <td>Backup e segurança</td>
+          <td>Incluídos e automatizados</td>
+          <td>Incluídos e automatizados</td>
+        </tr>
+        <tr>
+          <td>Alta disponibilidade (HA)</td>
+          <td>Sim, com SLA de até 99,99%</td>
+          <td>Sim, com SLA de até 99,99%</td>
+        </tr>
+        <tr>
+          <td>Escalabilidade</td>
+          <td>Alta (inclusive até 100 TB)</td>
+          <td>Alta (configurável conforme uso)</td>
+        </tr>
+        <tr>
+          <td>Gerenciado pelo Azure?</td>
+          <td>Sim, como PaaS</td>
+          <td>Sim, como PaaS</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4 class="mt-4">📝 Resumo Simples:</h4>
+  <p>
+    <strong>Azure SQL</strong> é melhor se você já usa ferramentas da Microsoft, como o Excel ou Power BI, e precisa de um banco de dados que se integre bem com essas ferramentas.
+  </p>
+  <p>
+    <strong>Azure Database for MySQL</strong> é uma boa opção se você está criando um site ou aplicativo que usa tecnologias como PHP ou Python, e quer economizar com licenciamento.
+  </p>
+</div>
+
+<!-- Mini Separador -->
+<div class="my-4">
+  <hr class="mini-custom-divider" />
+</div>
+
+<!-- Resumo Final – Migração de Banco de Dados para a Nuvem (Azure) -->
+<div id="resumo" class="">
+  <h2 class="section-title">
+    ✅ Resumo Final – Migração de Banco de Dados para a Nuvem (Azure)
+  </h2>
+
+  <p>
+    Se você está pensando em migrar o banco de dados de sua aplicação para a nuvem da Microsoft (Azure), saiba que existem várias opções de serviços de banco de dados. Veja algumas delas:
+  </p>
+
+  <ul>
+    <li>
+      <strong>Azure SQL Database</strong> – Para quem já usa o SQL Server ou precisa de integração com o Microsoft.
+    </li>
+    <li>
+      <strong>Azure Database for MySQL</strong> – Ideal para sites e aplicações web que utilizam o MySQL.
+    </li>
+    <li>
+      <strong>Azure Database for PostgreSQL</strong> – Um banco de dados flexível para dados geoespaciais e consultas mais complexas.
+    </li>
+    <li>
+      <strong>Azure Cosmos DB</strong> – Para aplicativos modernos que precisam de baixa latência e alta escalabilidade.
+    </li>
+  </ul>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover mt-3">
+      <thead class="table-dark">
+        <tr>
+          <th>Banco de Dados</th>
+          <th>Tipo</th>
+          <th>Principais Benefícios</th>
+          <th>Palavra-chave</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Azure SQL Database</strong></td>
+          <td>Relacional (SQL)</td>
+          <td>
+            Alta compatibilidade com o SQL Server, ideal para empresas que usam o ambiente Microsoft.
+          </td>
+          <td>Compatibilidade</td>
+        </tr>
+        <tr>
+          <td><strong>Azure Database for MySQL</strong></td>
+          <td>Relacional (Open Source)</td>
+          <td>
+            Excelente custo-benefício, ideal para sites e sistemas com WordPress.
+          </td>
+          <td>Popularidade</td>
+        </tr>
+        <tr>
+          <td><strong>Azure Database for PostgreSQL</strong></td>
+          <td>Relacional (Open Source)</td>
+          <td>
+            Suporta dados geoespaciais e consultas mais complexas.
+          </td>
+          <td>Flexibilidade</td>
+        </tr>
+        <tr>
+          <td><strong>Azure Cosmos DB</strong></td>
+          <td>NoSQL</td>
+          <td>
+            Baixa latência global e escalabilidade automática, perfeito para aplicativos modernos.
+          </td>
+          <td>Escalabilidade</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h4 class="section-title">🔄 Como funciona a migração</h4>
+  <ol>
+    <li>
+      Crie uma instância do banco de dados escolhido no Azure (ex: Azure Database for MySQL).
+    </li>
+    <li>
+      Use a ferramenta gratuita do Azure chamada <strong>Database Migration Service (DMS)</strong> para transferir os dados.
+    </li>
+    <li>
+      Informe as informações de origem e destino (como o login e a instância do banco).
+    </li>
+    <li>
+      A ferramenta vai copiar os dados automaticamente. Para bancos pequenos (ex: 20 GB), a migração pode ser bem rápida.
+    </li>
+    <li>
+      Atualize sua aplicação para apontar para o novo banco de dados na nuvem.
+    </li>
+  </ol>
+
+  <h4 class="section-title">💡 Vantagens dessa migração</h4>
+  <ul>
+    <li>Alta disponibilidade e escalabilidade.</li>
+    <li>Menos tempo com manutenção e infraestrutura.</li>
+    <li>Segurança e backups automáticos.</li>
+    <li>
+      Você pode continuar usando a mesma linguagem ou plataforma (PHP, Python, .NET etc).
+    </li>
+    <li>
+      Economia com licenças, especialmente no caso de bancos open source como MySQL e PostgreSQL.
+    </li>
+  </ul>
+</div>
+
+
+</div>
+
+
+<div class="d-flex justify-content-left mt-5">
+  <a href="../index.html" class="btn btn-outline-primary btn-lg shadow-lg rounded-pill px-4 py-2">
+    <i class="bi bi-house-door-fill"></i> Voltar para a página inicial
+  </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+  background-color: #f5faff;
+  color: #002f6c;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.sidebar {
+  background-color: #e3f2fd;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.main-content {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #0056b3;
+}
+.section-title {
+  border-left: 4px solid #007bff;
+  padding-left: 0.5rem;
+  margin-top: 2rem;
+}
+
+ul li::marker {
+  color: #007bff;
+}
+
+hr.custom-divider {
+  height: 5px;
+  background-color: #003366;
+  border: none;
+  border-radius: 3px;
+}
+
+.mini-custom-divider{
+  height: 5px;
+  background-color: #003366;
+  border: none;
+  border-radius: 3px;
+  max-width: 50px;
+}
+
+
+.glow-hover {
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.glow-hover:hover {
+  color: #007bff;
+  text-shadow: 0 0 2px #007bff, 0 0 4px #007bff;
+}
